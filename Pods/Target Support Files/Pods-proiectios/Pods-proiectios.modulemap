@@ -1,0 +1,6 @@
+framework module Pods_proiectios {
+  umbrella header "Pods-proiectios-umbrella.h"
+
+  export *
+  module * { export * }
+}
