@@ -183,17 +183,42 @@
             </objects>
             <point key="canvasLocation" x="2517" y="160"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Table View-->
         <scene sceneID="8LE-ht-Mlq">
             <objects>
-                <viewController id="ELv-pQ-UhA" sceneMemberID="viewController">
+                <viewController id="ELv-pQ-UhA" customClass="ViewControllerTableView" customModule="proiectios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="agb-gh-c1C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YSn-MO-mt1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="1KH-Mh-xzP">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1KH-Mh-xzP" id="Wo9-HS-uHl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="AHN-aQ-q9Q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AHN-aQ-q9Q" firstAttribute="bottom" secondItem="YSn-MO-mt1" secondAttribute="bottom" id="0hd-ES-wIp"/>
+                            <constraint firstItem="AHN-aQ-q9Q" firstAttribute="trailing" secondItem="YSn-MO-mt1" secondAttribute="trailing" id="6Q0-Sb-DDb"/>
+                            <constraint firstItem="YSn-MO-mt1" firstAttribute="top" secondItem="AHN-aQ-q9Q" secondAttribute="top" id="JKu-AV-bqB"/>
+                            <constraint firstItem="YSn-MO-mt1" firstAttribute="leading" secondItem="AHN-aQ-q9Q" secondAttribute="leading" id="vTk-Q0-dgA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TLb-EF-s3p"/>
+                    <connections>
+                        <outlet property="tableView" destination="YSn-MO-mt1" id="Pag-91-lxf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lSm-Bi-J9x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,21 +256,32 @@
             </objects>
             <point key="canvasLocation" x="1117" y="780"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Locatie-->
         <scene sceneID="LwV-G5-wQw">
             <objects>
-                <viewController id="WeQ-Sx-vLN" sceneMemberID="viewController">
+                <viewController id="WeQ-Sx-vLN" customClass="ViewControllerLocatie" customModule="proiectios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lg6-oU-7BB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gRS-Dq-MBl">
+                                <rect key="frame" x="0.0" y="208" width="414" height="443"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="R2g-76-ktI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R2g-76-ktI" firstAttribute="bottom" secondItem="gRS-Dq-MBl" secondAttribute="bottom" id="4Q0-I9-heZ"/>
+                            <constraint firstItem="gRS-Dq-MBl" firstAttribute="leading" secondItem="R2g-76-ktI" secondAttribute="leading" id="6c6-lv-6DD"/>
+                            <constraint firstItem="gRS-Dq-MBl" firstAttribute="top" secondItem="R2g-76-ktI" secondAttribute="top" id="M7V-na-BFt"/>
+                            <constraint firstItem="R2g-76-ktI" firstAttribute="trailing" secondItem="gRS-Dq-MBl" secondAttribute="trailing" id="f7X-IE-YPX"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BVk-Py-WW9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D2l-CP-J3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2033" y="708"/>
+            <point key="canvasLocation" x="2031.8840579710147" y="707.8125"/>
         </scene>
         <!--View Controller Poze Film-->
         <scene sceneID="dD5-hE-N3a">

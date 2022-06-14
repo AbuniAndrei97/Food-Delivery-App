@@ -14,6 +14,7 @@
 		6A224A0128590EE200234842 /* Marvel Studios' Doctor Strange in the Multiverse of Madness  Official Trailer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6A224A0028590EE200234842 /* Marvel Studios' Doctor Strange in the Multiverse of Madness  Official Trailer.mp4 */; };
 		6A224A0B28592DCB00234842 /* ViewControllerLocatie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A224A0A28592DCB00234842 /* ViewControllerLocatie.swift */; };
 		6A224A0D28593AE800234842 /* ViewControllerPozeFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A224A0C28593AE800234842 /* ViewControllerPozeFilm.swift */; };
+		6A224A15285952AA00234842 /* ViewControllerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A224A14285952AA00234842 /* ViewControllerTableView.swift */; };
 		6AE529FE28570ECA004C7B8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE529FD28570ECA004C7B8F /* AppDelegate.swift */; };
 		6AE52A0028570ECA004C7B8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE529FF28570ECA004C7B8F /* SceneDelegate.swift */; };
 		6AE52A0228570ECA004C7B8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE52A0128570ECA004C7B8F /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 		6A224A0028590EE200234842 /* Marvel Studios' Doctor Strange in the Multiverse of Madness  Official Trailer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marvel Studios' Doctor Strange in the Multiverse of Madness  Official Trailer.mp4"; sourceTree = "<group>"; };
 		6A224A0A28592DCB00234842 /* ViewControllerLocatie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLocatie.swift; sourceTree = "<group>"; };
 		6A224A0C28593AE800234842 /* ViewControllerPozeFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPozeFilm.swift; sourceTree = "<group>"; };
+		6A224A14285952AA00234842 /* ViewControllerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllerTa\bbleView.swift"; sourceTree = "<group>"; };
 		6AE529FA28570ECA004C7B8F /* proiectios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proiectios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE529FD28570ECA004C7B8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AE529FF28570ECA004C7B8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				6AE52A0128570ECA004C7B8F /* ViewController.swift */,
 				6A2249FE28590D4500234842 /* ViewControllerVideo.swift */,
 				6AE52A0328570ECA004C7B8F /* Main.storyboard */,
+				6A224A14285952AA00234842 /* ViewControllerTableView.swift */,
 				6A224A0C28593AE800234842 /* ViewControllerPozeFilm.swift */,
 				6A224A0A28592DCB00234842 /* ViewControllerLocatie.swift */,
 				6A2249FC2858F92A00234842 /* ViewControllerSite.swift */,
@@ -351,6 +354,7 @@
 			files = (
 				6A2249FD2858F92A00234842 /* ViewControllerSite.swift in Sources */,
 				6A2249F92858ED8400234842 /* ViewController1.swift in Sources */,
+				6A224A15285952AA00234842 /* ViewControllerTableView.swift in Sources */,
 				6AE52A0228570ECA004C7B8F /* ViewController.swift in Sources */,
 				6A224A0B28592DCB00234842 /* ViewControllerLocatie.swift in Sources */,
 				6A224A0D28593AE800234842 /* ViewControllerPozeFilm.swift in Sources */,

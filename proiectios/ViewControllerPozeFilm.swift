@@ -24,7 +24,7 @@ class ViewControllerPozeFilm: UIViewController {
         collectionView.dataSource = self
     }
     
-    let pozeFilm = ["poza1", "poza2"]
+    let pozeFilm = ["poza 1", "poza 2", "poza 3"]
     
 }
 
@@ -35,7 +35,7 @@ extension ViewControllerPozeFilm: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

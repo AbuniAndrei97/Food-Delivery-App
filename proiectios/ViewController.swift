@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import SafariServices
+import UserNotifications
 
 class ViewController: UIViewController {
     @IBOutlet weak var filmebuton: UIButton!
@@ -84,6 +85,33 @@ class ViewController: UIViewController {
         view.backgroundColor = .systemPurple
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         
+        let center = UNUserNotificationCenter.current()
+        
+        center.requestAuthorization(options: [.alert, .sound])
+        {
+            (granted, error) in
+            
+        }
+        
+        let content = UNMutableNotificationContent()
+        content.title = "notificare 1"
+        content.body = "notificare 2"
+        
+        let date = Date().addingTimeInterval(5)
+        
+        let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+        
+        let uuidString = UUID().uuidString
+        
+        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
+        
+        center.add(request){ (error) in
+            
+        }
+        
+        
         if FirebaseAuth.Auth.auth().currentUser != nil {
             label.isHidden = true
             button.isHidden = true
@@ -97,6 +125,7 @@ class ViewController: UIViewController {
             signOutButton.addTarget(self, action: #selector(logOutTapped), for: .touchUpInside)
         }
     }
+
     
     @objc private func logOutTapped() {
         do {
